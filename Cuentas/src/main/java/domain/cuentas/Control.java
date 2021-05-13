@@ -32,8 +32,7 @@ public class Control {
 
 
     public Cliente encontrarCliente (int unDNI){
-        Cliente unCliente = listaDeClientes.stream().filter(cliente -> cliente.getDni() == unDNI).findAny().orElse(null);
-        return unCliente;
+        return listaDeClientes.stream().filter(cliente -> cliente.getDni() == unDNI).findAny().orElse(null);
     }
 
 
