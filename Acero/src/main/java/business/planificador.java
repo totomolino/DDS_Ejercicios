@@ -13,6 +13,7 @@ public class planificador {
 
     public List<Envase> obtenerEnvases(int id_Producto) {
         Articulo miArticulo = articulos.stream().filter(unArticulo -> unArticulo.getId() == id_Producto).findAny().orElse(null);
+        assert miArticulo != null;
         return miArticulo.getEnvasesDisponibles();
     }
 
@@ -20,7 +21,8 @@ public class planificador {
        Pedido unPedido = new Pedido(idCliente, fechaUno, cantidadEntregas, cadaCuantosDiasSeHaceUnEnvio);
        unPedido.crearEntregas();
        Cliente miCliente = clientes.stream().filter(unCliente -> unCliente.getId() == idCliente).findAny().orElse(null);
-       miCliente.agregarPedido(unPedido);
+        assert miCliente != null;
+        miCliente.agregarPedido(unPedido);
 
        pedidos.add(unPedido);
     }
