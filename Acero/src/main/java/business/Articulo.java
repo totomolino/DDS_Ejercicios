@@ -16,4 +16,9 @@ public class Articulo {
     public int getId() {
         return id;
     }
+
+    public Articulo(int id, List<Envase> envasesDisponibles) {
+        this.id = id;
+        EnvasesDisponibles = envasesDisponibles;
+    }
 }
