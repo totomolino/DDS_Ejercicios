@@ -9,14 +9,17 @@ public class Entrega {
     List<ArticuloXEntrega> articulosAentregar = new ArrayList<>();
 
     public Entrega(Date fechaEntrega){
+
         this.setFechaEntrega(fechaEntrega);
     }
 
-    public Date getFEchaEntrega() {
+    public Date getFechaEntrega() {
+
         return fechaEntrega;
     }
 
     public void setFechaEntrega(Date fechaEntrega) {
+
         this.fechaEntrega = fechaEntrega;
     }
 

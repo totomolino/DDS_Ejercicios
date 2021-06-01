@@ -4,14 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cliente {
-    List<Pedido> pedidosRealizados = new ArrayList<>();
+    Pedido pedido;
     int id;
 
     public int getId() {
+
         return id;
     }
 
     public void agregarPedido(Pedido unPedido) {
-        pedidosRealizados.add(unPedido);
+        pedido = unPedido;
+    }
+
+    public Pedido getPedido(){
+        return pedido;
     }
 }

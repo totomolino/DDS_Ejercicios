@@ -100,6 +100,10 @@ public class Pedido {
     public void setIdPedido(int idPedido) {
         this.idPedido = idPedido;
     }
+
+    public List<Date> getFechasDeEntrega() {
+        return fechasDeEntrega;
+    }
 }
 
 

@@ -9,6 +9,7 @@ public class Articulo {
 
 
     public List<Envase> getEnvasesDisponibles() {
+
         return EnvasesDisponibles;
     }
 
