@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/Bateria/Bateria.iml" filepath="$PROJECT_DIR$/Bateria/Bateria.iml" />
       <module fileurl="file://$PROJECT_DIR$/Cuentas/Cuentas.iml" filepath="$PROJECT_DIR$/Cuentas/Cuentas.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/DDS_Ejercicios.iml" filepath="$PROJECT_DIR$/.idea/DDS_Ejercicios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InteresesBancarios/InteresesBancarios.iml" filepath="$PROJECT_DIR$/InteresesBancarios/InteresesBancarios.iml" />
       <module fileurl="file://$PROJECT_DIR$/ServiciosDeEmergencia/ServiciosDeEmergencia.iml" filepath="$PROJECT_DIR$/ServiciosDeEmergencia/ServiciosDeEmergencia.iml" />
       <module fileurl="file://$PROJECT_DIR$/Transportes/transportes.iml" filepath="$PROJECT_DIR$/Transportes/transportes.iml" />
     </modules>

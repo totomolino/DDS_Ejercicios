@@ -10,6 +10,7 @@
         <module name="Bateria" />
         <module name="Acero" />
         <module name="ServiciosDeEmergencia" />
+        <module name="InteresesBancarios" />
         <module name="transportes" />
       </profile>
     </annotationProcessing>
@@ -17,6 +18,7 @@
       <module name="Acero" target="8" />
       <module name="Bateria" target="11" />
       <module name="Cuentas" target="8" />
+      <module name="InteresesBancarios" target="11" />
       <module name="ServiciosDeEmergencia" target="8" />
       <module name="transportes" target="8" />
     </bytecodeTargetLevel>
