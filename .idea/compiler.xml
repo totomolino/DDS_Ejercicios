@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Cuentas" />
+        <module name="Bateria" />
+        <module name="Acero" />
+        <module name="ServiciosDeEmergencia" />
+        <module name="transportes" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Acero" target="8" />
+      <module name="Bateria" target="11" />
+      <module name="Cuentas" target="8" />
+      <module name="ServiciosDeEmergencia" target="8" />
+      <module name="transportes" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
