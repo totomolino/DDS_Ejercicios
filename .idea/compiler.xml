@@ -15,12 +15,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Acero" target="8" />
+      <module name="Acero" target="1.8" />
       <module name="Bateria" target="11" />
-      <module name="Cuentas" target="8" />
+      <module name="Cuentas" target="1.8" />
       <module name="InteresesBancarios" target="11" />
       <module name="ServiciosDeEmergencia" target="8" />
-      <module name="transportes" target="8" />
+      <module name="transportes" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
