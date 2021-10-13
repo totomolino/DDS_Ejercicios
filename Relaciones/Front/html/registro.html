@@ -27,17 +27,24 @@
                 <button type="button" class="header-button">Registrarse</button>
             </div>
         </div>
-        <div class="container" onclick="myFunction(this)">
+        <!-- <div class="dropbtn" onclick="myFunction(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
-            <ul class="menu">
-                <li><a class="menuItem" href="#">Home</a></li>
-                <li><a class="menuItem" href="#">Profile</a></li>
-                <li><a class="menuItem" href="#">About</a></li>
-                <li><a class="menuItem" href="#">Contacts</a></li>
-            </ul>
+        </div> -->
+        <div class="dropdown">
+            <div id="esta" class="dropbtn" onclick="myFunction(this)">
+                <div class="bar1" onclick="myFunction('esta')"></div>
+                <div class="bar2" onclick="myFunction('esta')"></div>
+                <div class="bar3" onclick="myFunction('esta')"></div>
+            </div>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
         </div>
+          
     </header>
 
     <main>        
