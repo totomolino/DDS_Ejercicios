@@ -1,90 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilosIniciarSesion.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delegaciones</title>
+    <link rel="icon" href="../fotos/laLetraD.ico">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,300&display=swap');</style>
+    <link rel="stylesheet" href="../css/estilosActualizarDatos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d1f11e4bbc.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap"
+      rel="stylesheet"
+    >
+    <script
+      src="https://kit.fontawesome.com/d1f11e4bbc.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Material Icon CDN -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Iniciar sesion</title>
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="../jscript/menu.js"></script>
+  </head>
+  
+  <body>
     <header>
-        <div>
+      <h2>Delegaciones</h2>
+      <div class="botones">
+        <a href="iniciarSesion.html" type="button" class="header-button">Iniciar sesion</a>
+        <a href="registro.html" type="button" class="header-button">Registrarse</a>
+      </div>
+      <div id="menu2" class="menu2" onclick="openSidebar()">
+        <button>
             <i class="fas fa-bars"></i>
-            <h2>Delegaciones</h2>
+        </button>
+      </div>
+      <!-- MENU 1
+            <div class="dropbtn" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
-        <section>
-            <div>
-                <i class="fas fa-user"></i>
-                <p>Puan Jerez</p>
-            </div>
-        </section>
+      <div class="dropdown">
+        <div id="esta" class="dropbtn" onclick="myFunction(this)">
+          <div class="bar1" onclick="myFunction('esta')"></div>
+          <div class="bar2" onclick="myFunction('esta')"></div>
+          <div class="bar3" onclick="myFunction('esta')"></div>
+        </div>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div> -->
     </header>
 
+    <nav>
+        <div class="side-bar" id="side-bar">
+            <button class="cruz">
+                <i class="far fa-times-circle"></i>
+            </button>
+            <p>MENU</p>
+            <section class="conj-botones-menu">
+                <section>
+                    <a href="ActualizarDatos.html" type="button" class="boton-menu">ACTUALIZAR DATOS</a>
+                </section>
+                <section>
+                    <a href="Autorizaciones.html" type="button" class="boton-menu">AUTORIZACIONES</a>
+                </section>
+                <section>
+                    <a href="notificaciones.html" type="button" class="boton-menu">NOTIFICACIONES</a>
+                </section>
+                <section>
+                    <a href="iniciarSesion.html" type="button" class="boton-menu">CERRAR SESION</a>
+                </section>
+            </section>
+        </div>
+    </nav>
+
     <main>
-        <section>
-            <h1>Actualizar datos</h1>
-            <br>
-            <form action="https://formspree.io/f/xwkawqpa" method="post" target="_blank">
-               <fieldset>
-                    <legend>Datos personales</legend>
-                    <label>
-                       <input placeholder="Ingrese su localidad" type="text" name="localidad">
-                    </label>
-                    <br> <br>
-                    <label>
-                        <input placeholder="Ingrese fecha de nacimiento:" type="text" name="fechaDeNacimiento">
-                    </label>
-                    <br> <br>
-                    <label>
-                        <input placeholder="Ingrese su ciudad" type="text" name="ciudad">
-                    </label>
-               </fieldset>
+      <section>
+          <section>
+            <h1>ACTUALIZAR DATOS</h1>
+            <br />
+            <form
+              action="https://formspree.io/f/xwkawqpa"
+              method="post"
+              target="_blank"
+            >
+              <section class="datos-personales">
+                <fieldset>
+                  <h3 class="titulos-form">Datos personales</h3>
+                  <label>
+                    <input
+                      placeholder="Ingrese su ciudad"
+                      type="text"
+                      name="ciudad"
+                    />
+                  </label>
+                  <br />
+                  <br />
+                  <label>
+                    <input
+                      placeholder="Ingrese fecha de nacimiento"
+                      type="text"
+                      name="fechaDeNacimiento"
+                      required
+                    />
+                  </label>
+                  <br />
+                  <br />
+                  <label>
+                    <input
+                      placeholder="Ingrese su localidad"
+                      type="text"
+                      name="localidad"
+                    />
+                  </label>
+                </fieldset>
+              </section>
+              <section class="usuario-foto">
+          
+                <fieldset class="formulario-foto">
+                  <h3 class="titulos-form">Foto</h3>
+                  <img src="../fotos/añadirFoto.jpeg" alt="añadirFoto" width="100%">
+                </fieldset>
+                <button class="boton-registrarse" type="submit">Registrarse</button>
+              </section>
+            </form>
+          </section>
 
-               <br>
+          <section class="botones-formulario">
+                <button type="reset" class="boton-cancelar">Cancelar</button>
+                <a href="notificaciones.html" type="button" class="boton-registrarse">Actualizar datos</a>
+          </section>
 
-               <fieldset>
-                   <legend>Foto</legend>
 
-               </fieldset>
-
-               <button type="submit">Actualizar datos</button>
-               <button>Cancelar</button>
-
-           </form>
-       </section>
+      </section>
     </main>
 
     <footer>
-        <div>
-            <h3>CONTACTANOS!</h3>
-            <p>Ante cualquier duda no dude en consultarnos.</p>
-            <p>Estamos a su disposicion.</p>
+      <section>
+        <div class="texto-contactanos">
+          <h3>CONTACTANOS!</h3>
+          <p>Ante cualquier duda no dude en consultarnos.</p>
+          <p>Estamos a su disposicion.</p>
         </div>
+      </section>
 
-        <section>
-            <div>
-                <i class="fas fa-phone-square-alt"></i>
-                <p>TELEFONO</p>
-                <p>11 2345-6789</p>
-            </div>
+      <section class="contacto-general">
+        <section class="contacto">
+          <div class="contacto-icon">
+            <i class="fas fa-envelope-square"></i>
+          </div>
+          <div class="contacto-info">
+            <p>MAIL</p>
+            <p>delegaciones@gmail.com</p>
+            <p></p>
+          </div>
         </section>
-
-        <section>
-            <div>
-                <i class="fas fa-envelope-square"></i>
-                <p>MAIL</p>
-                <p>delegaciones@gmail.com<p>
+        <section class="contacto">
+            <div class="contacto-icon">
+              <i class="fas fa-phone-square-alt"></i>
             </div>
-        </section>
+            <div class="contacto-info">
+              <p>TELEFONO</p>
+              <p>11 2345-6789</p>
+            </div>
+          </section>
+      </section>
     </footer>
-</body>
+
+  </body>
 </html>

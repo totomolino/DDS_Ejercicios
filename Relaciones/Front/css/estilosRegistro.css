@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* HEADER */
 header{
   background-color: darkcyan;
   display: flex;
@@ -165,6 +166,7 @@ form input{
   color: #757575;
   border-radius: 15px;
   padding: 10px 12px;
+  font-size: 16px;
 }
 
 #dni select{
