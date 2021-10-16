@@ -31,15 +31,13 @@ header{
   color: white;
   padding: 2px 9px;
   cursor: pointer;
-  transition: color 0.5s ease-in-out;
-  transition: border 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
   text-decoration: none;
-}
-
-.header-button:hover{
-  color: #b3e5fc;
-  border: 2px solid #b3e5fc;;
-}
+  }
+  
+  .header-button:hover{
+  background-color: rgb(11, 172, 172);
+  }
 /* FIN HEADER*/
 
 /* MENU */
@@ -135,7 +133,7 @@ nav p{
 
 h1{
   font-family: 'Fira Sans', sans-serif;
-  padding: 40px 200px 0 260px;
+  padding: 40px 200px 15px 260px;
 }
 
 form{
@@ -151,7 +149,7 @@ form > section{
 form fieldset{
   border: 2px solid darkcyan;
   border-radius: 15px;
-  padding: 12px;
+  padding: 25px;
 }
 
 .titulos-form{
@@ -160,7 +158,8 @@ form fieldset{
 }
 
 form input{
-  width: 100%;
+  width: 300px;
+  height: 45px;
   border: none;
   background-color: #f5f5f5;
   color: #757575;
