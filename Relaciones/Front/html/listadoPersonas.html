@@ -7,7 +7,7 @@
     <title>Delegaciones</title>
     <link rel="icon" href="../fotos/laLetraD.ico">
     <style> @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,300&display=swap');</style>
-    <link rel="stylesheet" href="../css/estilosNotificaciones.css">
+    <link rel="stylesheet" href="../css/estilosListadoPersonas.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -39,19 +39,22 @@
   
   <body>
     <header>
-      <h2>Delegaciones</h2>
-      <div class="usuario">
-        <div class="usuario-icon">
-            <i class="fas fa-user-circle"></i>
+        <h2>Delegaciones</h2>
+        <div class="usuario">
+          <div>
+              <button class="botonAdmin">Admin</button>
+          </div>
+          <div class="usuario-icon">
+              <i class="fas fa-user-circle"></i>
+          </div>
+          <p>Juan Perez</p>
         </div>
-        <p>Juan Perez</p>
-      </div>
-      <div id="menu2" class="menu2" onclick="openSidebar()">
-        <button>
-            <i class="fas fa-bars"></i>
-        </button>
-      </div>
-    </header>
+        <div id="menu2" class="menu2" onclick="openSidebar()">
+          <button>
+              <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </header>
 
     <nav>
         <div class="side-bar" id="side-bar">
@@ -61,13 +64,19 @@
             <p>MENU</p>
             <section class="conj-botones-menu">
                 <section>
-                    <a href="ActualizarDatos.html" type="button" class="boton-menu">ACTUALIZAR DATOS</a>
+                    <a href="actualizarDatosAdmin.html" type="button" class="boton-menu">ACTUALIZAR DATOS</a>
                 </section>
                 <section>
-                    <a href="Autorizaciones.html" type="button" class="boton-menu">AUTORIZACIONES</a>
+                    <a href="AutorizacionesAdmin.html" type="button" class="boton-menu">AUTORIZACIONES</a>
                 </section>
                 <section>
-                    <a href="notificaciones.html" type="button" class="boton-menu-seleccionado">NOTIFICACIONES</a>
+                    <a href="notificacionesAdmin.html" type="button" class="boton-menu">NOTIFICACIONES</a>
+                </section>
+                <section>
+                    <a href="listadoPersonas.html" type="button" class="boton-menu-seleccionado">LISTADO DE PERSONAS</a>
+                </section>
+                <section>
+                    <a href="listadoDelegaciones.html" type="button" class="boton-menu">LISTADO DE DELEGACIONES</a>
                 </section>
                 <section>
                     <a href="iniciarSesion.html" type="button" class="boton-menu">CERRAR SESION</a>
@@ -79,7 +88,7 @@
     <main>
         <section>
             <div>
-                <h1>NOTIFICACIONES</h1>
+                <h1>LISTADO DE PERSONAS</h1>
             </div>
             <table>
                 <thead>
@@ -95,7 +104,7 @@
                     <tr>
                         <th>NOMBRE</th>
                         <th>ESTADO DE USUARIO</th>
-                        <th colspan="2">RESPUESTA</th>
+                        <th></th>
                     </tr>
                     <tr class="fila-seleccionar">
                         <td>
@@ -108,8 +117,7 @@
                                 <p>Ultima vez: 14/APR/2021</p>
                             </div>
                         </td>
-                        <td><Button class="boton-aceptar">Aceptar</Button></td>
-                        <td><button class="boton-rechazar">Rechazar</button></td>
+                        <td><Button class="boton-verMas">Ver mas</Button></td>
                     </tr>
                     <tr class="fila-seleccionar">
                         <td>
@@ -122,8 +130,7 @@
                                 <p>Ultima vez: 14/APR/2021</p>
                             </div>
                         </td>
-                        <td><Button class="boton-aceptar">Aceptar</Button></td>
-                        <td><button class="boton-rechazar">Rechazar</button></td>
+                        <td><Button class="boton-verMas">Ver mas</Button></td>
                     </tr>
                     <tr class="fila-seleccionar">
                         <td>
@@ -136,8 +143,7 @@
                                 <p>Ultima vez: 14/APR/2021</p>
                             </div>
                         </td>
-                        <td><Button class="boton-aceptar">Aceptar</Button></td>
-                        <td><button class="boton-rechazar">Rechazar</button></td>
+                        <td><Button class="boton-verMas">Ver mas</Button></td>
                     </tr>
                     <tr class="fila-seleccionar">
                         <td>
@@ -150,8 +156,7 @@
                                 <p>Ultima vez: 14/APR/2021</p>
                             </div>
                         </td>
-                        <td><Button class="boton-aceptar">Aceptar</Button></td>
-                        <td><button class="boton-rechazar">Rechazar</button></td>
+                        <td><Button class="boton-verMas">Ver mas</Button></td>
                     </tr>
                     <tr class="fila-seleccionar">
                         <td>
@@ -164,8 +169,7 @@
                                 <p>Ultima vez: 14/APR/2021</p>
                             </div>
                         </td>
-                        <td><Button class="boton-aceptar">Aceptar</Button></td>
-                        <td><button class="boton-rechazar">Rechazar</button></td>
+                        <td><Button class="boton-verMas">Ver mas</Button></td>
                     </tr>
                     <tr class="fila-seleccionar">
                         <td>
@@ -178,8 +182,7 @@
                                 <p>Ultima vez: 14/APR/2021</p>
                             </div>
                         </td>
-                        <td><Button class="boton-aceptar">Aceptar</Button></td>
-                        <td><button class="boton-rechazar">Rechazar</button></td>
+                        <td><Button class="boton-verMas">Ver mas</Button></td>
                     </tr>
                     <tr class="fila-seleccionar">
                         <td class="ultima-fila">
@@ -192,8 +195,7 @@
                                 <p>Ultima vez: 14/APR/2021</p>
                             </div>
                         </td>
-                        <td class="ultima-fila"><Button class="boton-aceptar">Aceptar</Button></td>
-                        <td class="ultima-fila"><button class="boton-rechazar">Rechazar</button></td>
+                        <td class="ultima-fila"><Button class="boton-verMas">Ver mas</Button></td>
                     </tr>
                 </tbody>
             </table>
